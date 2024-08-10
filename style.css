@@ -3,6 +3,11 @@
     flex-direction: row;
 } */
 
+*, *:before, *:after {
+    box-sizing: border-box;
+    font-family: 'Roboto';
+  }
+
 body {
     display: flex;
     flex-direction: row;
@@ -13,17 +18,17 @@ body {
     background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     /* background-position: 25% 75%; */
     background-size: cover;
-    width: 400px;
+    width: 900px;
     height: 800px;
 }
 
 
 .rectangle {
-    height: 100px;
-    width: 400px;
+    height: 120px;
+    max-width: 900px;
     background-color: rgba(28, 28, 28, 0.6);
 
-    margin-top: 10rem;
+    margin-top: 180px;
 
 
     display: flex;
@@ -39,14 +44,14 @@ body {
     align-items: center;
 
     color: white;
-    font-size: 48px;
+    font-size: 72px;
     font-family: 'Norse';
-    font-weight: 500;
+    font-weight: 700;
 }
 
 img {
-    width: 60px;
-    max-height: 80px;
+    width: 80px;
+    max-height: 120px;
 }
 
 .content {
@@ -56,26 +61,79 @@ img {
 
 .hero {
     background-color: rgb(205, 203, 203);
+    height: 300px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 60px 120px 0px 60px;
+    gap: 1em;
+
+    font-size: 18px;
 }
 
 .container-form {
     display: flex;
     flex-direction: column;
+
+    height: 200px;
+
+    padding: 20px 60px 0px 60px;
+    
 }
 
 .form {
     display: flex;
     flex-direction: row;
+
+    /* justify-content: left; */
+
+    
 }
 
 ul {
     display: flex;
     flex-direction: row;
+    /* justify-content: left; */
     flex-wrap: wrap;
     list-style-type: none;
+
+    
+    
 }
 
 li {
+    display: flex;
+    flex-direction: column;
     flex: 0 0 50%;
+    align-items: left;
+    /* justify-content: space-around; */
+    gap: 0.25em;
 }
+
+.bottom {
+    background-color: rgb(205, 203, 203);
+    height: 300px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+}
+
+button {
+    background-color: rgb(54, 109, 54);
+    color: white;
+    border-radius: 8px;
+
+    width: 160px;
+    height: 40px;
+    border-style: none;
+}
+
+a {
+    color: rgb(54, 109, 54);
+  }
